@@ -1,72 +1,70 @@
-/* Estilos para el body para que ocupe toda la altura de la ventana */
-body, html {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body {
+  background-color: #FAFAF9;
   font-family: 'Sora', sans-serif;
-  background-color: #E5EAF0;
-  box-shadow: rgba(17, 23, 41, 0.05);
-  padding-bottom: 30px; /* Ajusta este valor según lo que necesites para compensar la sombra */
+}
+.container {
+  min-height: 100vh;       
+  display: grid;           
+  place-items: center;     
+  margin: 16px;            
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.grid {
+  display: grid;
+}
+
+.place-items-center {
+  place-items: center;
+}
+
+.mx-4 {
+  margin: 16px;
 }
 
 .card {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 350px; /* Ancho deseado para la card */
-  border-radius: 10px;
-  padding: 16px; /* Añade un poco de espacio alrededor del contenido */
-  background-color: #FFFFFF;
+  background-color: white;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 320px; /* Valor aproximado de max-w-sm en tailwind */
 }
 
-.container-top {
-  width: 100%; /* Ocupa todo el ancho de la card */
-  border-radius: 10px;
-}
-
-.image {
-  width: 100%; /* Ajusta la imagen al 100% del contenedor */
-  height: auto; /* Mantén la proporción original de la imagen */
-  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin deformarla */
-  border-radius: 15px;
-}
-
-.container-mid {
-  background-color: #E6D6FC;
-  width: 25%;
-  border-radius: 15px;
-  font-size: 0.625rem; /* 14px */
-  text-align: center;
- 
-}
-.container-mid p{
-  color: #883AE1;
-}
-
-/* tamaño de letras */
-.container-bottom p {
-  color: gray;
-  font-size: 0.875rem;
-  margin-top: 6px; /* Distancia de 6px entre el h3 y el p en container-bottom */
-}
-
-.container-bottom h3 {
-  margin-bottom: 6px; /* Distancia de 6px entre el h3 y el p en container-bottom */
-  font-size: 1.125rem;
-}
-.container-top {
+.container-top .card-image img {
+  border-radius: 16px;
   width: 100%;
-  margin-bottom: 16px; /* Espacio de 16px entre container-top y container-mid */
+}
+
+.design-label {
+  background-color: #E6D6FC;
+  color: #883AE1;
+  border-radius: 9999px;
+  width: 4.5rem;
+  padding-left: 12px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+h1 {
+  color: #20293A;
+  font-weight: bold;
+  font-size: 1.125rem;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.description {
+  color: #6C727F;
+  font-weight: lighter;
+  font-size: 0.875rem;
 }
 
 .author {
-  font-size: 0.875rem; /* 14px */
-  color: gray;
-}
-hr {
-  border: 1px solid #ccc;
-  width: 100%;
-  margin: 10px 0; /* Margen superior e inferior para la separación */
+  font-size: 0.625rem;
+  color: #6C727F;
 }
