@@ -1,0 +1,72 @@
+/* Estilos para el body para que ocupe toda la altura de la ventana */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Sora', sans-serif;
+  background-color: #E5EAF0;
+  box-shadow: rgba(17, 23, 41, 0.05);
+  padding-bottom: 30px; /* Ajusta este valor según lo que necesites para compensar la sombra */
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 350px; /* Ancho deseado para la card */
+  border-radius: 10px;
+  padding: 16px; /* Añade un poco de espacio alrededor del contenido */
+  background-color: #FFFFFF;
+}
+
+.container-top {
+  width: 100%; /* Ocupa todo el ancho de la card */
+  border-radius: 10px;
+}
+
+.image {
+  width: 100%; /* Ajusta la imagen al 100% del contenedor */
+  height: auto; /* Mantén la proporción original de la imagen */
+  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin deformarla */
+  border-radius: 15px;
+}
+
+.container-mid {
+  background-color: #E6D6FC;
+  width: 25%;
+  border-radius: 15px;
+  font-size: 0.625rem; /* 14px */
+  text-align: center;
+ 
+}
+.container-mid p{
+  color: #883AE1;
+}
+
+/* tamaño de letras */
+.container-bottom p {
+  color: gray;
+  font-size: 0.875rem;
+  margin-top: 6px; /* Distancia de 6px entre el h3 y el p en container-bottom */
+}
+
+.container-bottom h3 {
+  margin-bottom: 6px; /* Distancia de 6px entre el h3 y el p en container-bottom */
+  font-size: 1.125rem;
+}
+.container-top {
+  width: 100%;
+  margin-bottom: 16px; /* Espacio de 16px entre container-top y container-mid */
+}
+
+.author {
+  font-size: 0.875rem; /* 14px */
+  color: gray;
+}
+hr {
+  border: 1px solid #ccc;
+  width: 100%;
+  margin: 10px 0; /* Margen superior e inferior para la separación */
+}

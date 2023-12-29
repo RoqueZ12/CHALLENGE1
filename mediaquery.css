@@ -1,0 +1,23 @@
+/* Media Query para dispositivos con ancho <= 640px */
+@media (max-width: 640px) {
+    .card {
+      width: 90%; /* Reducir el ancho para dispositivos móviles */
+    }
+  
+    .container-mid {
+      width: 100%; /* Ocupar todo el ancho en dispositivos móviles */
+    }
+  }
+  
+  /* Media Query para dispositivos con ancho >= 1280px (escritorio) */
+  @media (min-width: 1280px) {
+    .card {
+      width: 1100px; /* Por ejemplo, establecer un ancho fijo para pantallas grandes */
+      /* Puedes agregar otros estilos específicos para escritorio aquí */
+    }
+  
+    .container-mid {
+      width: 25%; /* Ajusta el ancho según tus necesidades para pantallas más grandes */
+      /* Otros estilos específicos para escritorio */
+    }
+  }
